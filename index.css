@@ -1,0 +1,19 @@
+#title {
+background: rgb(204, 113, 226);
+font-size: 7em;
+    border: 5px solid #4d73c7;
+}
+
+.content {
+    background: rgb(209, 100, 146);
+    font-size: 3em;
+    border: 2px solid rgb(97, 207, 145) 
+}
+
+#content-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
