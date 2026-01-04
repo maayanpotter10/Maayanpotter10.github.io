@@ -1,8 +1,14 @@
 console.log("helo world")
+
+// secret
+
 let secret=document.getElementsByClassName('secret-link')[0]
 secret.addEventListener('mouseenter',() => {
-    secret.style.top = Math.random() * 100 + 'em';
+    secret.style.top = Math.random() * 100 + '%';
+    secret.style.right = Math.random() * 100 + '%';
 })
+
+// style
 
 let stylish = document.getElementById("stylish");
 console.log(stylish);

@@ -1,5 +1,7 @@
 body {
     overflow: hidden;
+    background-image:repeating-radial-gradient(farthest-side at 70% 50%,#b3a, #f00 5%, #fff 15%) ;
+    
 }
 .secret-link {
 position: fixed;
@@ -9,6 +11,8 @@ text-decoration:none;
     color:#c3a;
     text-shadow: 0.1em 0.1em 0.1em #5f4699;
     font-weight: bold;
+    transition: all 0.5s;
+
 }
 
 #navbar {
@@ -21,9 +25,15 @@ text-decoration:none;
 }
 
 #main {
-background-image:repeating-radial-gradient(farthest-side at 70% 50%,#b3a, #f00 5%, #fff 15%) ;
 display:flex;
-height: 100%;
+
+    background: white;
+    width: 40em;
+    height: 30em;
+    justify-self: center;
+    align-self: anchor-center;
+    border-radius: 0.5em;
+    box-shadow: 0.3em 0.3em 1em 0;
 }
 
 .nav-link a{
@@ -42,3 +52,22 @@ height: 100%;
 right-col {
     width: 50%;
 }
+
+.stylish {
+    transition:all 0.3s
+}
+
+.game-container{
+ 
+display:flex;
+
+    background: white;
+    width: 40em;
+    height: 30em;
+    justify-self: center;
+    align-self: anchor-center;
+    border-radius: 0.5em;
+    box-shadow: 0.3em 0.3em 1em 0;
+}
+
+
