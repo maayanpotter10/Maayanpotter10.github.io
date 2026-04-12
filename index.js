@@ -25,3 +25,4 @@ function makeRandomColor () {
     let color = `rgb(${r}, ${g},${b})`
     return color
 }
+

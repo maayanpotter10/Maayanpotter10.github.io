@@ -1,22 +1,22 @@
 body {
-    overflow: hidden;
-    background-image:repeating-radial-gradient(farthest-side at 70% 50%,#b3a, #f00 5%, #fff 15%) ;
-    
+    /* overflow: hidden; */
+    background-image: repeating-radial-gradient(farthest-side at 70% 50%, #fff, #83556d 5%, #fff 15%)
 }
+
 .secret-link {
 position: fixed;
 top:1.5em;
 right: 16em;
 text-decoration:none;
-    color:#c3a;
-    text-shadow: 0.1em 0.1em 0.1em #5f4699;
+    color:rgb(87, 223, 143);
+    text-shadow: 0.1em 0.1em 0.1em #000;
     font-weight: bold;
     transition: all 0.5s;
 
 }
 
 #navbar {
-    background-color: aquamarine;
+    
     display: flex;
     justify-content: flex-end;
     gap: 2em;
@@ -25,7 +25,7 @@ text-decoration:none;
 }
 
 #main {
-display:flex;
+    display:flex;
 
     background: white;
     width: 40em;
@@ -36,10 +36,25 @@ display:flex;
     box-shadow: 0.3em 0.3em 1em 0;
 }
 
+#left-col{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+           
+
+#right-col{
+
+}
+
+#hero{
+width:19em;
+
+}
 .nav-link a{
     text-decoration:none;
-    color:#c3a;
-    text-shadow: 0.1em 0.1em 0.1em #5f4699;
+    color:rgb(87, 223, 143);
+    text-shadow: 0.1em 0.1em 0.1em #000;
     font-weight: bold;
 }
 .nav-link a:hover {
@@ -53,21 +68,31 @@ right-col {
     width: 50%;
 }
 
-.stylish {
-    transition:all 0.3s
+#stylish {
+    transition:all 0.3s;
+    font-size:2em;
 }
 
 .game-container{
- 
-display:flex;
-
-    background: white;
-    width: 40em;
-    height: 30em;
-    justify-self: center;
-    align-self: anchor-center;
-    border-radius: 0.5em;
-    box-shadow: 0.3em 0.3em 1em 0;
+ background: #5f4699;
+ justify-self: center;
+ box-shadow: 0.3em 0.3em 1em 0;
+ border-radius: 0.5em;
+ padding: 1em;
+ text-align: center;
 }
 
 
+.slide{
+transform:translateY(-100vh);
+animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+    from{
+        transform: translateY(-100vh);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
